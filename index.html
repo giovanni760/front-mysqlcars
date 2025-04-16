@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>REST API Car</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <p><i class="fas fa-glass-whiskey"></i> Consumo de REST-API de Car</p>
+
+    <div>
+        <label>matricula </label>
+        <input type="text" id="matricula">
+    </div>
+    <div>
+        <label>modelo </label>
+        <input type="text" id="modelo">
+    </div>
+
+    <div>
+        <label>marca </label>
+        <input type="text" id="marca">
+    </div>
+
+    <div>
+        <label>age </label>
+        <input type="text" id="age">
+    </div>
+    <div>
+        <label>color </label>
+        <input type="text" id="color">
+    </div>
+
+    <div>
+        <label>cilindros </label>
+        <input type="text" id="cilindros">
+    </div>
+
+    
+    <br>
+    <p>
+        Get by ID
+    </p>
+    <div>
+        <label>ID de Car </label>
+        <input type="text" id="id">
+        <button onclick="getById()">Get car</button>
+    </div>
+    <br>
+
+    <button onclick="postCar()"><i class="fas fa-wine-bottle"></i></i>POST car</button>
+    <button onclick="getCars()"><i class="fas fa-wine-bottle"></i>GET cars</button>
+    <button id="btn-update" style="display:none;" onclick="updateCar()">UPDATE car</button>
+
+
+    <div id="resultado"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="callrestapi.js"></script>
+
+</body>
+
+</html>
